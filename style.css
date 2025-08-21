@@ -1,0 +1,392 @@
+/* ===== Global Styles ===== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #222;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 15px 50px;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .nav-links li {
+  margin-left: 20px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: #00adb5;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero-bg.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero span {
+  color: #00adb5;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #00adb5;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #008c97;
+}
+
+/* ===== Sections ===== */
+section {
+  padding: 60px 10%;
+}
+
+.about, .resume, .contact {
+  /* background: #fff;
+  margin: 30px auto;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1); */
+
+  
+  background: #f8fafc;
+  border-left: 4px solid #0ea5a4; /* teal highlight */
+  border-radius: 8px;
+  padding: 16px 10%;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about p, .resume p, .contact p {
+  font-size: 16px;
+}
+
+/* ===== Projects ===== */
+.projects {
+  background: #f0f0f0;
+  padding: 60px 10%;
+}
+
+.project-card {
+  /* background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1); */
+
+  background: #f8fafc;
+  border-left: 4px solid #0ea5a4; /* teal highlight */
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  color: #00adb5;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+/* footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #fff;
+
+
+  
+} */
+
+footer {
+  background-color: #222;   
+  color: #fff;              
+  text-align: center;       
+  padding: 15px 0;          
+  font-size: 14px;
+  margin-top: 30px;         
+  border-top: 2px solid #444; 
+}
+
+
+/* ====== Education Part css ===== */
+
+/* Education Section Main */
+.education-main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.basic-education {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.heading-div svg {
+  width: 40px;
+  height: 40px;
+  color: #0f172a; /* dark navy */
+}
+
+.heading-text-div h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Education Cards */
+#educations .edu-card {
+  background: #f8fafc;
+  border-left: 4px solid #0ea5a4; /* teal highlight */
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#educations .edu-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.edu-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  color: #0b1220;
+}
+
+.edu-card .inst {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #475569;
+}
+
+.edu-card .details {
+  font-size: 0.9rem;
+  color: #334155;
+  margin-top: 4px;
+}
+
+
+
+/* About CSS */
+
+/* About Section */
+.about-main {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-family: Arial, sans-serif;
+}
+
+/* Left side: Photo */
+.about-photo img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;  /* round photo */
+  border: 4px solid #0ea5a4; /* teal border */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Right side: Text */
+.about-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #0f172a;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: #374151;
+}
+
+/* Responsive for small screens */
+@media (max-width: 700px) {
+  .about-main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-photo img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .about-text h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* resume + Certificate */
+
+/* Parent container */
+.resume-certificate {
+  display: flex;
+  justify-content: center;
+  gap: 40px;          /* boxes ke beech ka gap */
+  margin: 50px 0;
+}
+
+/* Common style for both boxes */
+.resume-box, .certificate-box {
+  flex: 1;
+  max-width: 400px;   /* ek box ki max width */
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Heading style */
+.resume-box h2, .certificate-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Paragraph */
+.resume-box p, .certificate-box p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background: #00b3b3;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #008080;
+}
+
+
+/* Contact */
+
+/* Contact Section */
+.contact {
+  max-width: 600px;
+  margin: 50px auto;       /* center align */
+  background: #f8f9fa;     /* हल्का grey background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Heading */
+.contact h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Paragraphs */
+.contact p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Links (Email & Phone) */
+.contact a {
+  color: #00b3b3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+
+
